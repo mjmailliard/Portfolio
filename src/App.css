@@ -1,32 +1,77 @@
-.App {
+body {
   text-align: center;
+  background-color: rgb(22, 22, 22);
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.nameTag{
+  margin-top: 10%;
+  position: sticky;
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  animation-name: nameTag;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  transform-origin: initial;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@keyframes nameTag{
+0%  { transform: scale(1)}
+15% { transform: scale(1.25)}
+25% { transform: scale(1)}
+60% { transform: 
+      translate3d(75% , -45%, 0px)
+      rotate(17deg) 
+      scale(.75)
+    }
+100% { transform: 
+      translate3d(150%, -90%, 0px)
+      rotate(35deg) 
+      scale(.5)
+    }    
+}
+.helloMyNameIs {
+  position: relative;
+  background-color: #f23b2b;
   color: white;
+  border-radius: 20px 20px 0px 0px;
+  text-align: center;
+  max-width: 375px;
+  height: 90px;
+  font-family: Lato, sans-serif;
+  font-style: bold;
+  vertical-align: middle; 
+  padding-bottom: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.hello {
+  position: relative;
+  font-size: 40px;
+  margin-bottom: -10px;
+  font-weight: bold;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mynameis{
+  position: relative;
+  font-size: 28px;
+  font-weight: bold;
+}
+.name {
+  position: relative;
+  background-color: white;
+  /* display: inline-block; */
+  vertical-align: middle;
+  color: black;
+  text-align: center;
+  width: 375px;
+  font-size: 75px;
+  height: 130px;
+  line-height: 130px; 
+  font-family: 'Lato', sans-serif;
+}
+.bottomBar {
+  position: relative;
+  background-color: #f23b2b;
+  height: 20px;
+  border-radius: 0px 0px 20px 20px;
+  max-width: 375px;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  
