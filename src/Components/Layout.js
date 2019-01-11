@@ -12,8 +12,9 @@ class Layout extends Component {
                 
                     <header>
                     <Navbar/>
+                    Header
                    </header>
-                 
+                
                         {this.props.children}
                 <footer> Insert Foot</footer>
 </div>

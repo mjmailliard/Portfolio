@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
 // import Navbar from './Components/Navbar'
-import Layout from './Components/Layout'
+import Layout from './Components/Layout';
+// import Layout from './Components/Layout'
+import Routing from './Routing'
 class App extends Component {
   render() {
     return (
       <div className="">
-      {/* <Navbar /> */}
-<Layout>
+      <Layout>
+
 
 
 <div className='nameTag'>
