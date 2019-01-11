@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import Navbar from './Navbar'
-
+// import Navbar from './Components/Navbar'
+import Layout from './Components/Layout'
 class App extends Component {
   render() {
     return (
       <div className="">
-      <Navbar />
-
+      {/* <Navbar /> */}
+<Layout>
 
 
 <div className='nameTag'>
@@ -21,7 +21,7 @@ class App extends Component {
   <div name="bottomBar" className="bottomBar">
   </div>
 </div>
-
+</Layout>
       </div>
     );
   }
