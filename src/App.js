@@ -4,7 +4,7 @@ import './App.css';
 import Layout from './Components/Layout';
 // import Layout from './Components/Layout'
 import NameTag from './Components/NameTag'
-import Routing from './Routing'
+
 class App extends Component {
   render() {
     return (

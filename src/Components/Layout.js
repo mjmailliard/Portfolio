@@ -11,11 +11,11 @@ class Layout extends Component {
  
                 
                     <header>
-                    <Navbar/>
-                    Header
+                        <Navbar/>
                    </header>
                 
                         {this.props.children}
+                        
                 <footer> Insert Foot</footer>
 </div>
         );
