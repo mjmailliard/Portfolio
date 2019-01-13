@@ -6,6 +6,7 @@ import Projects from './Pages/Projects'
 import Contact from './Pages/Contact'
 import About from './Pages/About'
 
+
 const Routing = () => (
     
     <Router>
@@ -15,6 +16,7 @@ const Routing = () => (
             <Route path="/projects" component={Projects}/>
             <Route path="/contact" component={Contact}/>
             <Route path="/about" component={About}/>
+            <Route path="/files" /> 
         </Switch>
     </Router>
     )

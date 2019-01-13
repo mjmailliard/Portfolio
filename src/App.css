@@ -3,13 +3,21 @@ body {
   background-color: rgb(22, 22, 22);
   color: whitesmoke;
 }
+.mainDiv{
+  width: 100vw;
+  height: 100vh;
+}
 footer{
-  position: absolute;
+  position: fixed;
   text-align: center;
   bottom: 0px;
   height: 50px;
   width: 100vw;
   background-color: #343a40;
+}
+.pdfViewer {
+  width: 100vw;
+  height: 100vh;
 }
 .nameTag{
   margin-top: 10%;

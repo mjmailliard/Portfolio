@@ -8,7 +8,7 @@ import NameTag from './Components/NameTag'
 class App extends Component {
   render() {
     return (
-      <div className="">
+      <div className="mainDiv">
         <Layout>
 
           <NameTag/>
