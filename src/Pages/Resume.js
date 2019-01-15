@@ -15,7 +15,7 @@ export default class Resume extends Component {
             <Layout>
                {/* <a href={pdfFile} target="_blank" rel="noopener noreferrer"><h1>Resume</h1></a> */}
                 <div className="pdfViewer" >
-                    <PDFViewer backend={PDFJSBackend} src='/files/Resume.pdf'/>
+                    <PDFViewer backend={PDFJSBackend} src='/files/MikeMailliardResume.pdf'/>
                 </div>
             </Layout>             
           </div>

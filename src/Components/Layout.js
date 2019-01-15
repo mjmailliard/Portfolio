@@ -16,7 +16,7 @@ class Layout extends Component {
                 
                         {this.props.children}
                         
-                <footer> Insert Foot</footer>
+                <footer></footer>
 </div>
         );
     }

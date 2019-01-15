@@ -6,7 +6,7 @@ export default class NameTag extends Component {
     render() {
       return (
           <Fragment>
-            <div className='nameTag'>
+            <div className='nameTagAnimation'>
                 <div name="maintag" className="helloMyNameIs">
                     <section className="hello">Hello</section> 
                     <section className="mynameis">my name is</section>

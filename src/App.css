@@ -1,3 +1,4 @@
+
 body {
   text-align: center;
   background-color: rgb(22, 22, 22);
@@ -7,6 +8,10 @@ body {
   width: 100vw;
   height: 100vh;
 }
+header{
+  position: sticky;
+  top: 0px;
+}
 footer{
   position: fixed;
   text-align: center;
@@ -15,15 +20,81 @@ footer{
   width: 100vw;
   background-color: #343a40;
 }
+.nameImage{
+  border-radius: 5px;
+}
+.quote{
+ position: static;
+  margin-top: 10%;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.copyright{
+  text-align: right;
+  color: darkslategray;
+  font-style: italic;
+}
 .pdfViewer {
   width: 100vw;
   height: 100vh;
 }
-.nameTag{
-  margin-top: 10%;
-  position: sticky;
-  width: 375px;
+.contactInfo{
+  padding: 5px;
+  border: 1px  solid whitesmoke;
+  border-radius: 5px;
+  width: 50vw;
+  margin: 5px auto;
+  font-size: larger;
+
+}
+.contactInfoLine:hover{
+  border-radius: 5px;
+  margin: 0px;
+  background-color: whitesmoke;
+  color: black;
+  font-style: italic;
+  font-size: larger;
+}
+.emailForm{
+  width: 50vw;
   margin-left: auto;
+  margin-right: auto;
+}
+form{
+ position: center;
+  /* text-align: left;  */
+
+}
+input{
+  width: 50vw;
+  border-radius: 5px;
+  margin: 1px;
+  padding: 5px 10px;
+
+}
+textarea{
+  width: 50vw;
+  border-radius: 5px;
+  margin: 1px;
+  padding: 5px 10px;
+
+}
+.nameTagProject{
+  position: initial;
+  width: 375px;
+  height: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nameTagAnimation{
+  margin-top: 10%;
+  position: absolute;
+  left: 50vw;
+  
+  width: 375px;
+  margin-left: -187.5px;
   margin-right: auto;
   animation-name: nameTag;
   animation-duration: 3s;
@@ -33,19 +104,20 @@ footer{
   transform-origin: initial;
 }
 @keyframes nameTag{
-0%  { transform: scale(1)}
-15% { transform: scale(1.25)}
-25% { transform: scale(1)}
-60% { transform: 
-      translate3d(75% , -45%, 0px)
-      rotate(17deg) 
-      scale(.75)
-    }
-100% { transform: 
-      translate3d(150%, -90%, 0px)
-      rotate(35deg) 
-      scale(.5)
-    }    
+  0%  { transform: scale(1)}
+  15% { transform: scale(1.25)}
+  25% { transform: scale(1)}
+  60% { transform: 
+        translate3d(75% , -45%, 0px)
+        rotate(17deg) 
+        scale(.75)
+      }
+  100% { transform: 
+        translate3d(150%, -90%, 0px)
+        rotate(35deg) 
+        scale(.5)
+        
+      }    
 }
 .helloMyNameIs {
   position: relative;
@@ -82,7 +154,7 @@ footer{
   font-size: 75px;
   height: 130px;
   line-height: 130px; 
-  font-family: 'Lato', sans-serif;
+  font-family: 'Noteworthy', sans-serif;
 }
 .bottomBar {
   position: relative;
