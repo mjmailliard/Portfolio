@@ -9,7 +9,8 @@ export default class Projects extends Component {
           <div>
               <Layout>
               <h1>Projects</h1>
-              <Link to="/projects/nametag">NameTag</Link>
+              <Link to="/projects/nametag">NameTag</Link><br/>
+              <Link to="/projects/cssmenu">CSS Menu</Link>
               </Layout>              
           </div>
       )
