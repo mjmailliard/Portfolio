@@ -2,40 +2,56 @@ import React, { Component } from 'react';
 import '../App.css';
 
 
+
+
 export default class CssMenu extends Component {
+    constructor(props){
+        super(props) 
+            this.state ={
+                logo: ""
+            }
+    }
+
+handleMenuClick = (e) => {
+    this.props.changeLogo(e.target.src);
+    // this.setState({logo: e.target.src})
+    
+    
+
+} 
     render() {
       return (
           <div className="cssTeamsMenu">
-           <img src="/img/teams.png" className="menuTitle" alt="Teams Menu"/> 
-           <table className="teamIconContainer">
-               <tbody>
+            <img src="/img/teams.png" className="menuTitle" alt="Teams Menu"/> 
+              <table className="teamIconContainer">
+                <tbody>
+                  <tr>
+                    <td><img onClick={e => this.handleMenuClick(e)} src="/img/utes.png" className="teamIcon" alt="Utes logo"/></td>
+                    <td><img onClick={e => this.handleMenuClick(e)} src="/img/byu.png" className="teamIcon" alt="BYU logo"/></td>                            
+                  </tr> 
                     <tr>
-                        <td><a href="..."><img src="/img/jazz.png" className="teamIcon" alt="Jazz logo"/></a></td>
-                        <td><a href="..."><img src="/img/byu.png" className="teamIcon" alt="BYU logo"/></a></td>                            
+                      <td><img onClick={e => this.handleMenuClick(e)} src="/img/ustate.png" className="teamIcon" alt="Utah State logo"/></td> 
+                      <td><img onClick={e => this.handleMenuClick(e)} src="/img/weber.png" className="teamIcon" alt="Weber logo"/></td>
                     </tr> 
                     <tr>
-                        <td><a href="..."><img src="/img/utes.png" className="teamIcon" alt="Utes logo"/></a></td> 
-                        <td><a href="..."><img src="/img/ustate.png" className="teamIcon" alt="Utah State logo"/></a></td>
+                      <td><img onClick={e => this.handleMenuClick(e)} src="/img/bees.png" className="teamIcon" alt="Bees logo"/></td> 
+                      <td><img onClick={e => this.handleMenuClick(e)} src="/img/jazz.png" className="teamIcon" alt="Jazz logo"/></td>
                     </tr> 
                     <tr>
-                        <td><a href="..."><img src="/img/weber.png" className="teamIcon" alt="Weber logo"/></a></td> 
-                        <td><a href="..."><img src="/img/real.png" className="teamIcon" alt="Real logo"/></a></td>
-                        </tr> 
-                    <tr>
-                        <td><a href="..."><img src="/img/bees.png" className="teamIcon" alt="Bees logo"/></a></td> 
-                        <td><a href="..."><img src="/img/stars.png" className="teamIcon" alt="Stars logo"/></a></td>
+                      <td><img onClick={e => this.handleMenuClick(e)} src="/img/stars.png" className="teamIcon" alt="Stars logo"/></td> 
+                      <td><img onClick={e => this.handleMenuClick(e)} src="/img/real.png" className="teamIcon" alt="Real logo"/></td>
                     </tr> 
                     <tr>
-                        <td><a href="..."><img src="/img/nfl.png" className="teamIcon" alt="NFL logo"/></a></td> 
-                        <td><a href="..."><img src="/img/nba.png" className="teamIcon" alt="NBA logo"/></a></td>
+                      <td><img onClick={e => this.handleMenuClick(e)} src="/img/nfl.png" className="teamIcon" alt="NFL logo"/></td> 
+                      <td><img onClick={e => this.handleMenuClick(e)} src="/img/pac12.png" className="teamIcon" alt="PAC12 logo"/></td>
                     </tr> 
                     <tr>
-                        <td><a href="..."><img src="/img/mlb.png" className="teamIcon" alt="MLB logo"/></a></td> 
-                        <td><a href="..."><img src="/img/pac12.png" className="teamIcon" alt="PAC12 logo"/></a></td>                           
+                      <td><img onClick={e => this.handleMenuClick(e)} src="/img/mlb.png" className="teamIcon" alt="MLB logo"/></td> 
+                      <td><img onClick={e => this.handleMenuClick(e)} src="/img/nba.png" className="teamIcon" alt="NBA logo"/></td>                           
                     </tr> 
-               </tbody>
-           </table>
-
+                </tbody>
+              </table>
+             
           </div>
       )
     }

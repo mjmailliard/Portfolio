@@ -29,7 +29,7 @@ class App extends Component {
   }
   render() {
     const quotes = this.state.qod
-console.log(quotes)
+
     return (
       <div className="mainDiv">
         <Layout>
