@@ -24,7 +24,6 @@ class App extends Component {
           qod: data.contents.quotes[0],
           credit: data.contents.copyright
         })
-  
       })
   }
   render() {
@@ -34,6 +33,8 @@ class App extends Component {
       <div className="mainDiv">
         <Layout>
           <NameTag/>
+          <h1>Full Stack Web Developer</h1>
+          React.js, CSS, HTML, REST, Hapi.js, LoopBack, PostgreSQL, MongoDB
           <div className="quote">
           {/* {quotes.title}<br/> */}
           {quotes.quote}<br/>

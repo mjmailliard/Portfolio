@@ -35,7 +35,8 @@ handleClickDownload(e) {
               <h1>Name Tag</h1>
             <p>I was given an assignment to create a "pixel-perfect" copy of a name tag using nothing but HTML and CSS.<br/>
                 As my gift to you, I've also added the ability to customize it and download your very own copy!<br/>
-                The original project may be found on <a href="https://github.com/mjmailliard/Name-Tag" target="_parent" rel="noopener noreferrer">Github</a>. </p> 
+                The original project may be found on <a href="https://github.com/mjmailliard/Name-Tag" target="_parent" rel="noopener noreferrer">Github</a>. 
+            </p> 
 
             <div id="nameTagProject" className="nameTagProject">
             <div id="nameImage">
@@ -51,7 +52,8 @@ handleClickDownload(e) {
                 </div>    
             </div>
             <br/>
-            <input type="text" defaultValue="Mike" minLength="0" maxLength="10" onChange={e => this.setState({name:e.target.value})}></input><br/><br/>
+       
+        <input type="text" className="nameTagInput" defaultValue="Mike" minLength="0" maxLength="10" onChange={e => this.setState({name:e.target.value})}></input><br/><br/>  
               <button onClick={e => this.handleClickDownload(e)}>Download</button>
               </Layout>              
           </div>

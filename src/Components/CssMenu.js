@@ -21,8 +21,8 @@ handleMenuClick = (e) => {
 } 
     render() {
       return (
-          <div className="cssTeamsMenu">
-            <img src="/img/teams.png" className="menuTitle" alt="Teams Menu"/> 
+          <div className="cssTeamsMenu"><label className="cssMenuTitle">TEAMS</label>
+            {/* <img src="/img/teams.png" className="menuTitle" alt="Teams Menu"/>  */}
               <table className="teamIconContainer">
                 <tbody>
                   <tr>
