@@ -35,7 +35,6 @@ handleClickDownload(e) {
               <h1>Name Tag</h1>
             <p>I was given an assignment to create a "pixel-perfect" copy of a name tag using nothing but HTML and CSS.<br/>
                 As my gift to you, I've also added the ability to customize it and download your very own copy!<br/>
-                The original project may be found on <a href="https://github.com/mjmailliard/Name-Tag" target="_parent" rel="noopener noreferrer">Github</a>. 
             </p> 
 
             <div id="nameTagProject" className="nameTagProject">

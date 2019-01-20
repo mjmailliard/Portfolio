@@ -33,18 +33,31 @@ class App extends Component {
       <div className="mainDiv">
         <Layout>
           <NameTag/>
+          <br/>
           <h1>Full Stack Web Developer</h1>
-          React.js, CSS, HTML, REST, Hapi.js, LoopBack, PostgreSQL, MongoDB
-          <div className="quote">
-          {/* {quotes.title}<br/> */}
-          {quotes.quote}<br/>
-          <div className="copyright"> 
-            {quotes.author}<br/>
-           ©<a href="https://theysaidso.com" target="_blank" rel="noopener noreferrer">{this.state.credit}</a>
-           </div>
-</div>
+          <br/>
+          <p className="techList">React.js, HTML, CSS, Bootstrap, REST, Hapi.js, LoopBack, PostgreSQL, MongoDB</p>
+         
+
         
-          
+          <div className="streak grey lighten-3 dailyQuote">
+            <div className="flex-center">
+              <ul className="mb-0 list-unstyled">
+                <li>
+                  <h2 className="h2-responsive"><i className="fas fa-quote-left" aria-hidden="false"></i> &nbsp; {quotes.quote} &nbsp;  <i className="fas fa-quote-right"
+                      aria-hidden="true"></i></h2>
+                </li>
+                <li className="mb-0">
+                  <h5 className="text-center font-italic mb-0">~ {quotes.author}</h5>
+                </li>
+
+              </ul>
+                        <div className="copyright">
+                ©<a href="https://theysaidso.com" target="_blank" rel="noopener noreferrer">{this.state.credit}</a>
+          </div> 
+            </div>
+           
+          </div>
 
 
         </Layout>
