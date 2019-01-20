@@ -1,7 +1,10 @@
 import React, { Component} from 'react';
 import '../App.css';
 import Layout from '../Components/Layout'
+import * as emailjs from 'emailjs-com'
+import { createBrowserHistory } from 'history';
 
+const history = createBrowserHistory();
 
 
 export default class Contact extends Component {
@@ -17,19 +20,19 @@ export default class Contact extends Component {
 handleFormChange(event) {
         this.setState({});
       }
-handleSendForm(e) {
+async handleSendForm(e) {
     e.preventDefault(e)
-    const data = ''
-    fetch('https://api.emailjs.com/api/v1.0/email/send', {
-      method: 'POST',
-      body: data,
 
-
-    })
-
-    alert('Your message is on the way!')
+ emailjs.sendForm('portfolio_site', 'contact_form', '#form', 'user_HyvRSalgjShzu8Ucn7Du9')
+ .then(function(response) {
+  console.log('Message Sent Successfully', response.status, response.text);
+  alert('Your message has been sent! \n I\'ll get back to you as soon as I can. \n In fact, I\'m probably already reading it.')
+  history.go(0)
+}, function(error) {
+  console.log('Message failed to send.', error);
+  alert('Uh-oh, THAT didn\'t work right...\n I\'d still love to hear from you though, please try a different contact method.')
+});
 }
-
     render() {
       return (
           <div>
@@ -52,7 +55,7 @@ handleSendForm(e) {
              </Fragment> */}
 
 
-
+<form name="form" id="form" onSubmit={e => this.handleSendForm(e)}>
              {/* <!-- Section: Contact v.3 --> */}
 <section className="contact-section my-5">
 
@@ -76,7 +79,7 @@ handleSendForm(e) {
             {/* <!-- Grid column --> */}
             <div className="col-md-6">
               <div className="md-form mb-0">
-                <input type="text" id="form-contact-name" className="form-control"onChange={e => this.setState({name: e.target.value})}></input>
+                <input type="text" name="user_name" id="form-contact-name" className="form-control"onChange={e => this.setState({name: e.target.value})}></input>
                 <label htmlFor="form-contact-name" className="">Your name</label>
               </div>
             </div>
@@ -85,7 +88,7 @@ handleSendForm(e) {
             {/* <!-- Grid column --> */}
             <div className="col-md-6">
               <div className="md-form mb-0">
-                <input type="text" id="form-contact-email" className="form-control" onChange={e => this.setState({email: e.target.value})}></input>
+                <input type="text" name="user_email" id="form-contact-email" className="form-control" onChange={e => this.setState({email: e.target.value})}></input>
                 <label htmlFor="form-contact-email" className="">Your email</label>
               </div>
             </div>
@@ -105,9 +108,9 @@ handleSendForm(e) {
             {/* <!-- Grid column --> */}
             <div className="col-md-12">
               <div className="md-form mb-0">
-                <textarea type="text" id="form-contact-message" className="form-control md-textarea" rows="3" onChange={e => this.setState({message: e.target.value})}></textarea>
+                <textarea type="text" name="text" id="form-contact-message" className="form-control md-textarea" rows="3" onChange={e => this.setState({message: e.target.value})}></textarea>
                 <label htmlFor="form-contact-message">Your message</label><br/>
-                <button className="btn-floating btn-dark btn-lg" onClick={e => this.handleSendForm(e)}>
+                <button type="submit" className="btn-floating btn-dark btn-lg">
                   <i className="far fa-paper-plane left"></i> SEND</button>
                 
               </div>
@@ -159,7 +162,7 @@ handleSendForm(e) {
 
 </section>
 {/* <!-- Section: Contact v.3 --> */}
-
+</form>
               </Layout> 
           </div>
       )
