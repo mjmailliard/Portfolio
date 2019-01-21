@@ -16,10 +16,10 @@ export default class Projects extends Component {
                Wishlists
               class project? */}
 {/* <!-- Section heading --> */}
-<h2 className="h1-responsive font-weight-bold my-5">Projects</h2>
+<h1 className="h1-responsive font-weight-bold my-5">Projects</h1>
 {/* <!-- Section description --> */}
-<h4 className="grey-text w-responsive mx-auto mb-5">Take a look at some of my creations and collaborations!
-</h4>
+<h3 className="grey-text w-responsive mx-auto mb-5">Take a look at some of my creations and collaborations!
+</h3>
 
 {/* <!-- Grid row --> */}
 <div className="row text-center">

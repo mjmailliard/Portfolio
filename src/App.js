@@ -36,7 +36,7 @@ class App extends Component {
           <br/>
           <h1>Full Stack Web Developer</h1>
           <br/>
-          <p className="techList">React.js, HTML, CSS, Bootstrap, REST, Hapi.js, LoopBack, PostgreSQL, MongoDB</p>
+          <h4 className="techList">React.js, HTML, CSS, Bootstrap, REST, Hapi.js, LoopBack, PostgreSQL, MongoDB</h4>
          
 
         
