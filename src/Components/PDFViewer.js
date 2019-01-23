@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default class PDFViewer extends React.Component {
   constructor(props) {
@@ -12,11 +12,14 @@ export default class PDFViewer extends React.Component {
 
     this.backend.init(src, element);
   }
-  
+
   render() {
     return (
-<div ref={this.viewerRef} id='viewer' style={{ width: '100%', height: '100%' }}>
-      </div>
-    )
+      <div
+        ref={this.viewerRef}
+        id="viewer"
+        style={{ width: "100%", height: "100%" }}
+      />
+    );
   }
 }
