@@ -7,5 +7,6 @@
 }
 .techsUsed{
     font-style: oblique;
-    font-size: smaller;
+    font-weight: 700
+    /* font-size: small; */
 }

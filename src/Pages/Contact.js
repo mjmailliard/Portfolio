@@ -147,40 +147,40 @@ export default class Contact extends Component {
                       <h3 className="my-4 pb-2">Contact Info</h3>
                       <ul className="text-lg-left list-unstyled ml-4">
                         <li>
-                          <p>
-                            <i className="fab fa-rebel pr-3 fa-lg" />Mike
-                            Mailliard
-                          </p>
+                          
+                            <h4><i className="fab fa-rebel pr-3 fa-lg" />Mike
+                            Mailliard</h4>
+                          
                         </li>
                         <li>
-                          <p>
-                            <i className="fas fa-phone pr-3 fa-lg" />(435)
-                            225-3601
-                          </p>
+                         
+                          <h4><i className="fas fa-phone pr-3 fa-lg" />(435)
+                            225-3601</h4>
+                          
                         </li>
                         <li>
-                          <p>
-                            <a href="mailto:mjmailliard@gmail.com">
+                          
+                          <h4> <a href="mailto:mjmailliard@gmail.com">
                               <i className="fas fa-envelope pr-3 fa-lg" />
                               mjmailliard@gmail.com
-                            </a>
-                          </p>
+                            </a></h4>
+                          
                         </li>
                         <li>
-                          <p>
-                            <a
+                         
+                          <h4> <a
                               href="https://github.com/mjmailliard/"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
                               <i className="fab fa-github pr-3 fa-lg" />
                               mjmailliard
-                            </a>
-                          </p>
+                            </a></h4>
+                        
                         </li>
                         <li>
-                          <p>
-                            <a
+                          
+                          <h4>  <a
                               href="https://www.linkedin.com/in/mikemailliard/"
                               target="_blank"
                               rel="noopener noreferrer"
@@ -188,8 +188,8 @@ export default class Contact extends Component {
                               {" "}
                               <i className="fab fa-linkedin pr-3 fa-lg"> </i>
                               mikemailliard
-                            </a>
-                          </p>
+                            </a></h4>
+                          
                         </li>
                       </ul>
                     </div>
@@ -202,6 +202,8 @@ export default class Contact extends Component {
             </section>
             {/* <!-- Section: Contact v.3 --> */}
           </form>
+          <br/>
+          <br/>
         </Layout>
       </div>
     );

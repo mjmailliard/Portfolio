@@ -36,10 +36,10 @@ export default class ProjectNameTag extends Component {
           <p>
             I was given an assignment to create a "pixel-perfect" copy of a name
             tag using nothing but HTML and CSS.
-            <br />
+            <p className="techsUsed">
             As my gift to you, I've also added the ability to customize it and
             download your very own copy!
-            <br />
+            </p>
           </p>
 
           <div id="nameTagProject" className="nameTagProject">
@@ -55,7 +55,7 @@ export default class ProjectNameTag extends Component {
             </div>
           </div>
           <br />
-
+Type your name here: <br/>
           <input
             type="text"
             className="nameTagInput"

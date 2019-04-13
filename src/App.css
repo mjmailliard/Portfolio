@@ -64,9 +64,10 @@ button {
   margin-right: auto;
 }
 .copyright {
-  text-align: right;
+  text-align: right; 
   color: rgb(128, 128, 128);
   font-style: italic;
+  margin-right: 20%;
 }
 .pdfViewer {
   width: 100vw;
@@ -216,6 +217,14 @@ textarea {
 .cssTeamsMenu:hover {
   margin-left: 110px;
 }
+.cssTeamsMenu:focus {
+  margin-left: 110px;
+  outline: none;
+}
+.cssTeamsMenu:focus-within {
+  margin-left: 110px;
+}
+
 .teamIconContainer {
   position: inherit;
   left: -110px;
@@ -239,6 +248,7 @@ textarea {
   cursor: pointer;
 }
 .teamImage {
+  margin: 20px;
   border-radius: 50%;
   width: 200px;
   border: 10px solid whitesmoke;
@@ -251,4 +261,14 @@ textarea {
   font-size: 1.5em;
   text-align: justify;
   font-weight: 500;
+}
+.maxWidthForText{
+
+  max-width: 50%;
+  min-width: 350px;
+  margin: auto;
+  padding: 20px;
+}
+.bottomPadding{
+  padding-bottom: 70px;
 }
