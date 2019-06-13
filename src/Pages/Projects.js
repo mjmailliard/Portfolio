@@ -17,6 +17,46 @@ export default class Projects extends Component {
           </h3>
           {/* <!-- Grid row --> */}
           <div className="row text-center">
+          {/* <!-- Grid column --> */}
+          <div className="col-lg-4 col-md-6">
+              {/* <!--Featured image--> */}
+              <div className="view overlay rounded z-depth-1">
+                <a href="/projects/cssmenu" rel="noopener noreferrer">
+                  <img
+                    src="/img/yahtzee.png"
+                    className="img-fluid"
+                    alt="Yahtzee"
+                  />
+                </a>
+                <div className="mask rgba-white-slight" />
+              </div>
+              {/* <!--Excerpt--> */}
+              <div className="card-body pb-0">
+                <h4 className="font-weight-bold my-3">Yahtzee</h4>
+                <p className="techsUsed">React.js</p>
+                <p className="grey-text">
+                  This is my current project. Just a few more scoring rules for some edge-case scenarios and I'll be ready to add extra features.  Go ahead and play it!  
+                </p>
+                <a
+                  href="https://yahtzee-playtest.netlify.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-dark btn-sm"
+                >
+                  <i className="fas fa-link left" /> View project
+                </a>{" "}
+                &nbsp;
+                <a
+                  href="https://github.com/mjmailliard/Yahtzee"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-dark btn-sm"
+                >
+                  <i className="fas fa-code left" /> View code
+                </a>
+              </div>
+            </div>
+            {/* <!-- Grid column --> */}
             {/* <!-- Grid column --> */}
             <div className="col-lg-4 col-md-6">
               {/* <!--Featured image--> */}
@@ -209,8 +249,7 @@ export default class Projects extends Component {
                 <p className="techsUsed">CSS, HTML</p>
                 <p className="grey-text">
                   I designed and created this menu as part of an intern
-                  experience. Coming soon, to a major sports website near you!
-                  (I hope.)
+                  experience. 
                 </p>
                 <Link to="/projects/cssmenu" className="btn btn-dark btn-sm">
                   <i className="fas fa-link left" /> View project

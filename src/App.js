@@ -38,7 +38,7 @@ class App extends Component {
           <h1>Full Stack Web Developer</h1>
           <br />
           <h4 className="techList">
-            React.js, HTML, CSS, Bootstrap, REST, Hapi.js, LoopBack, PostgreSQL,
+            React.js, React Native, HTML, CSS, Bootstrap, REST, Hapi.js, LoopBack, PostgreSQL,
             MongoDB
           </h4>
           <div className="streak grey lighten-3 dailyQuote">
