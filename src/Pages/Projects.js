@@ -21,7 +21,7 @@ export default class Projects extends Component {
           <div className="col-lg-4 col-md-6">
               {/* <!--Featured image--> */}
               <div className="view overlay rounded z-depth-1">
-                <a href="/projects/cssmenu" rel="noopener noreferrer">
+                <a href="https://yahtzee-playtest.netlify.com/" target="_blank" rel="noopener noreferrer">
                   <img
                     src="/img/yahtzee.png"
                     className="img-fluid"
