@@ -21,6 +21,46 @@ export default class Projects extends Component {
           <div className="col-lg-4 col-md-6">
               {/* <!--Featured image--> */}
               <div className="view overlay rounded z-depth-1">
+                <a href="https://md-contacts.netlify.com/" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="/img/contacts.png"
+                    className="img-fluid"
+                    alt="Contacts Page"
+                  />
+                </a>
+                <div className="mask rgba-white-slight" />
+              </div>
+              {/* <!--Excerpt--> */}
+              <div className="card-body pb-0">
+                <h4 className="font-weight-bold my-3">Contacts</h4>
+                <p className="techsUsed">React.js, CSS, Express.js</p>
+                <p className="grey-text">
+                  Originally part of a coding challenge for an interview, I wrote my own API and spent a little extra time this one.
+                </p>
+                <a
+                  href="https://md-contacts.netlify.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-dark btn-sm"
+                >
+                  <i className="fas fa-link left" /> View project
+                </a>{" "}
+                &nbsp;
+                <a
+                  href="https://github.com/mjmailliard/md-contacts"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-dark btn-sm"
+                >
+                  <i className="fas fa-code left" /> View code
+                </a>
+              </div>
+            </div>
+            {/* <!-- Grid column --> */}            
+          {/* <!-- Grid column --> */}
+          <div className="col-lg-4 col-md-6">
+              {/* <!--Featured image--> */}
+              <div className="view overlay rounded z-depth-1">
                 <a href="https://yahtzee-playtest.netlify.com/" target="_blank" rel="noopener noreferrer">
                   <img
                     src="/img/yahtzee.png"
@@ -33,9 +73,9 @@ export default class Projects extends Component {
               {/* <!--Excerpt--> */}
               <div className="card-body pb-0">
                 <h4 className="font-weight-bold my-3">Yahtzee</h4>
-                <p className="techsUsed">React.js</p>
+                <p className="techsUsed">React.js, CSS, Express.js, PostgreSQL</p>
                 <p className="grey-text">
-                  This is my current project. Just a few more scoring rules for some edge-case scenarios and I'll be ready to add extra features.  Go ahead and play it!  
+                   Hand coded Yahtzee, conditional formatting, and realistic 2d dice. This was fun to code, see if you can beat the high score!  
                 </p>
                 <a
                   href="https://yahtzee-playtest.netlify.com/"
